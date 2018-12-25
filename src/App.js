@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { SafeAreaView, View, Text } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import firebase from 'firebase';
 import { Header } from './components/common';
+import Loginform from './components/Loginform';
 
 class App extends Component {
   componentWillMount() {
@@ -18,7 +19,7 @@ class App extends Component {
     return (
       <SafeAreaView>
         <Header headerText={'Authentication App'} />
-        <Text>This is my app</Text>
+        <Loginform />
       </SafeAreaView>
     );
   }
